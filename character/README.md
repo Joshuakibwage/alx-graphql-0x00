@@ -88,3 +88,39 @@ Example (character-id-1-output.json):
 
 ---
 
+## 📖 Task 2: List of All Characters (Paginated)
+
+This task queries the Rick and Morty API to fetch a list of characters across multiple pages.
+
+### Queries
+- `characters-page-1.graphql`
+- `characters-page-2.graphql`
+- `characters-page-3.graphql`
+- `characters-page-4.graphql`
+
+### Fields
+- `id`
+- `name`
+- `status`
+- `image`
+
+### Example Query
+```graphql
+query {
+  characters(page: 1) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+Example Output
+
+See characters-page-1-output.json for the full response of page 1.
+
+
+---
+
